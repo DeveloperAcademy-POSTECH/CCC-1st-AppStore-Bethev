@@ -1,0 +1,12 @@
+disabled_rules:
+- trailing_whitespace
+    
+opt_in_rules:
+
+#only_rules:
+
+#included:
+
+#excluded:
+
+#line_length:
