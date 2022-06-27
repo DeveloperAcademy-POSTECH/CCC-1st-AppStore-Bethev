@@ -13,7 +13,6 @@
 		37BF90982864E1F700F4EB5E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF90972864E1F700F4EB5E /* Controller.swift */; };
 		37BF90A12865CCF600F4EB5E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF90A02865CCF600F4EB5E /* Color.swift */; };
 		37BF90A32865D43700F4EB5E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF90A22865D43700F4EB5E /* AppView.swift */; };
-		37BF90AB2869D35300F4EB5E /* SwiftUITrackableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 37BF90AA2869D35300F4EB5E /* SwiftUITrackableScrollView */; };
 		37E8EF752864420A0015909E /* AppStoreCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8EF742864420A0015909E /* AppStoreCloneApp.swift */; };
 		37E8EF772864420A0015909E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8EF762864420A0015909E /* ContentView.swift */; };
 		37E8EF792864420B0015909E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E8EF782864420B0015909E /* Assets.xcassets */; };
@@ -40,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BF90AB2869D35300F4EB5E /* SwiftUITrackableScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +121,6 @@
 			);
 			name = AppStoreClone;
 			packageProductDependencies = (
-				37BF90AA2869D35300F4EB5E /* SwiftUITrackableScrollView */,
 			);
 			productName = AppStoreClone;
 			productReference = 37E8EF712864420A0015909E /* AppStoreClone.app */;
@@ -154,7 +151,6 @@
 			);
 			mainGroup = 37E8EF682864420A0015909E;
 			packageReferences = (
-				37BF90A92869D35300F4EB5E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */,
 			);
 			productRefGroup = 37E8EF722864420A0015909E /* Products */;
 			projectDirPath = "";
@@ -416,25 +412,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		37BF90A92869D35300F4EB5E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/maxnatchanon/trackable-scroll-view";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		37BF90AA2869D35300F4EB5E /* SwiftUITrackableScrollView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 37BF90A92869D35300F4EB5E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */;
-			productName = SwiftUITrackableScrollView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37E8EF692864420A0015909E /* Project object */;
 }

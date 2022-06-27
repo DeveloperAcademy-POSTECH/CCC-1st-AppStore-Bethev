@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftUITrackableScrollView
 
 struct TodayView: View {
     @EnvironmentObject var controller: Controller
@@ -19,7 +18,7 @@ struct TodayView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                TrackableScrollView(.vertical, showIndicators: true, contentOffset: $scrollViewContentOffset) {
+                ScrollView {
                     HStack {
                         VStack {
                             Text("6월 28일 화요일")
