@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		37BF908128645A4D00F4EB5E /* .swiftLint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 37BF908028645A4D00F4EB5E /* .swiftLint.yml */; };
+		37BF90832864618100F4EB5E /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF90822864618100F4EB5E /* TodayView.swift */; };
+		37BF908A286487AC00F4EB5E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF9089286487AC00F4EB5E /* Data.swift */; };
+		37BF90982864E1F700F4EB5E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF90972864E1F700F4EB5E /* Controller.swift */; };
+		37BF90A12865CCF600F4EB5E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF90A02865CCF600F4EB5E /* Color.swift */; };
+		37BF90A32865D43700F4EB5E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF90A22865D43700F4EB5E /* AppView.swift */; };
+		37BF90AB2869D35300F4EB5E /* SwiftUITrackableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 37BF90AA2869D35300F4EB5E /* SwiftUITrackableScrollView */; };
 		37E8EF752864420A0015909E /* AppStoreCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8EF742864420A0015909E /* AppStoreCloneApp.swift */; };
 		37E8EF772864420A0015909E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8EF762864420A0015909E /* ContentView.swift */; };
 		37E8EF792864420B0015909E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E8EF782864420B0015909E /* Assets.xcassets */; };
@@ -16,6 +22,12 @@
 
 /* Begin PBXFileReference section */
 		37BF908028645A4D00F4EB5E /* .swiftLint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftLint.yml; sourceTree = "<group>"; };
+		37BF90822864618100F4EB5E /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		37BF9089286487AC00F4EB5E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		37BF90972864E1F700F4EB5E /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		37BF90A02865CCF600F4EB5E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		37BF90A22865D43700F4EB5E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		37BF90A42865D95700F4EB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		37E8EF712864420A0015909E /* AppStoreClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E8EF742864420A0015909E /* AppStoreCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCloneApp.swift; sourceTree = "<group>"; };
 		37E8EF762864420A0015909E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,12 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BF90AB2869D35300F4EB5E /* SwiftUITrackableScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37BF90882864877F00F4EB5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37BF9089286487AC00F4EB5E /* Data.swift */,
+				37BF90972864E1F700F4EB5E /* Controller.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37BF909D2865CCA500F4EB5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37BF90A02865CCF600F4EB5E /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		37E8EF682864420A0015909E = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +84,13 @@
 		37E8EF732864420A0015909E /* AppStoreClone */ = {
 			isa = PBXGroup;
 			children = (
+				37BF90A42865D95700F4EB5E /* Info.plist */,
+				37BF909D2865CCA500F4EB5E /* Extensions */,
+				37BF90882864877F00F4EB5E /* Model */,
 				37E8EF742864420A0015909E /* AppStoreCloneApp.swift */,
 				37E8EF762864420A0015909E /* ContentView.swift */,
+				37BF90822864618100F4EB5E /* TodayView.swift */,
+				37BF90A22865D43700F4EB5E /* AppView.swift */,
 				37E8EF782864420B0015909E /* Assets.xcassets */,
 				37E8EF7A2864420B0015909E /* Preview Content */,
 			);
@@ -87,6 +122,9 @@
 			dependencies = (
 			);
 			name = AppStoreClone;
+			packageProductDependencies = (
+				37BF90AA2869D35300F4EB5E /* SwiftUITrackableScrollView */,
+			);
 			productName = AppStoreClone;
 			productReference = 37E8EF712864420A0015909E /* AppStoreClone.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +153,9 @@
 				Base,
 			);
 			mainGroup = 37E8EF682864420A0015909E;
+			packageReferences = (
+				37BF90A92869D35300F4EB5E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */,
+			);
 			productRefGroup = 37E8EF722864420A0015909E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,7 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BF90A32865D43700F4EB5E /* AppView.swift in Sources */,
+				37BF90982864E1F700F4EB5E /* Controller.swift in Sources */,
+				37BF90A12865CCF600F4EB5E /* Color.swift in Sources */,
+				37BF908A286487AC00F4EB5E /* Data.swift in Sources */,
 				37E8EF772864420A0015909E /* ContentView.swift in Sources */,
+				37BF90832864618100F4EB5E /* TodayView.swift in Sources */,
 				37E8EF752864420A0015909E /* AppStoreCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,9 +341,12 @@
 				DEVELOPMENT_TEAM = JP3V2463G6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppStoreClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,9 +373,12 @@
 				DEVELOPMENT_TEAM = JP3V2463G6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppStoreClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -364,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37BF90A92869D35300F4EB5E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxnatchanon/trackable-scroll-view";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37BF90AA2869D35300F4EB5E /* SwiftUITrackableScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37BF90A92869D35300F4EB5E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */;
+			productName = SwiftUITrackableScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37E8EF692864420A0015909E /* Project object */;
 }

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct AppStoreCloneApp: App {
+    @StateObject private var controller = Controller()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(controller)
         }
     }
 }
